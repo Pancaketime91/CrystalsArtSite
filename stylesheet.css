@@ -1,32 +1,35 @@
 body {
-    background-image: url("img/spraypaintbg.jpg");
+    background-color: #c0c0c0;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 h1 {
     font-size:64px;
     font-family: Impact, sans-serif;
     text-align: center;
-    color: #00FFFF;
+    color: #000;
+    background-color: #d3d3d3;
 }   
 
 h2 {
     font-family: sans-serif;
     font-size: 30px;
     text-align: center;
-    color: #00FFFF;
-    
+    color: #000;
 }
 
 p {
     font-family: sans-serif;
     text-align: center;
 }
+
 /* Facebook Icons and Ebay Icons */
 svg {
     width: 60px;
 }
+
 /* gets rid of bullet poimts for icons */
 li {
     list-style: none;
@@ -34,7 +37,7 @@ li {
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -44,33 +47,6 @@ li {
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -93,18 +69,19 @@ li {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+#cursor {
+  size: 2px;
+  display: block;
+  position: absolute;
+  height: size;
+  width: size;
+  border-radius: ceil(size / 2);
+  background-color: transparent;
+  top: -100px;
+  left: -100px;
 }
